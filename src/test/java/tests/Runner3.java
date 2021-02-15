@@ -1,0 +1,13 @@
+package tests;
+
+import com.intuit.karate.testng.KarateRunner;
+
+import cucumber.api.CucumberOptions;
+
+@CucumberOptions(features={"src\\test\\resources\\features\\feature4.feature"},
+                  monochrome=true,
+                  plugin={"pretty","html:target/myresults","rerun:target/failed.txt"}
+                  )
+public class Runner3 extends KarateRunner
+{
+}
